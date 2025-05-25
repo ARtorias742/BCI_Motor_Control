@@ -1,0 +1,7 @@
+mne==1.8.0
+numpy==1.26.4
+scipy==1.14.1
+scikit-learn==1.5.2
+pygame==2.6.0
+pyyaml==6.0.2
+openbci-python==0.13  # Optional, for OpenBCI hardware

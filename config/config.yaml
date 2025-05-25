@@ -1,0 +1,19 @@
+# config.yaml
+eeg:
+  sampling_rate: 250  # Hz, adjust based on your EEG device
+  channels: ['C3', 'C4']  # Motor cortex channels for motor imagery
+preprocessing:
+  low_freq: 8  # Hz, for bandpass filter
+  high_freq: 30  # Hz, for bandpass filter
+  notch_freq: 50  # Hz, for notch filter (power line noise)
+feature_extraction:
+  freq_bands:
+    alpha: [8, 13]  # Hz
+    beta: [13, 30]  # Hz
+classification:
+  model: 'svm'  # Classifier type
+  kernel: 'rbf'  # SVM kernel
+visualization:
+  screen_width: 800  # Pixels
+  screen_height: 600  # Pixels
+  cursor_speed: 5  # Pixels per command
